@@ -234,10 +234,3 @@ function o() {
 function tre() {
 	tree -aC -I '.git|node_modules|bower_components' --dirsfirst "$@" | less -FRNX;
 }
-
-# rename iterm2 tabs
-function rename_tab () {
-    TEXT=$1
-    export PROMPT_COMMAND='echo -ne "\033]0;${TEXT}\007"'
-}
-
